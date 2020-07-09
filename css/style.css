@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    background: linear-gradient(45deg, #fca5f1, #b5ffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.converter-wrap {
+    padding: 1rem;
+    border-radius: 15px;
+    border: 5px solid #7578e7;
+}
+
+.converter {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.converter input {
+    width: 100px;
+}
+
+.changer {
+    display: flex;
+    justify-content: space-between;
+}
