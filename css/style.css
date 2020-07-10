@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    color: #666;
+}
 
 .container {
     width: 100%;
@@ -30,9 +35,34 @@
 
 .converter input {
     width: 100px;
+
+}
+
+.converter select {
+    width: 75px;
+}
+
+.converter input,
+.converter select {
+    border-radius: 5px;
+    padding: 5px;
+    background: #fff;
+    color: #666;
+    border: 1px solid #666;
+    width: 80px;
+    text-align: center;
 }
 
 .changer {
     display: flex;
     justify-content: space-between;
+}
+.change-btn {
+    width: 70px;
+    text-align: center;
+    transition: all .5s ease;
+}
+.change-btn img {
+    width: 32px;
+    cursor: pointer;
 }

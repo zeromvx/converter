@@ -25,8 +25,12 @@ function listeners() {
     curValue1.addEventListener('input', calc);
     curValue2.addEventListener('input', calc);
 
+    let degIndex = 1;
+
     changeBtn.addEventListener('click', () => {
         [curItem1.value, curItem2.value] = [curItem2.value, curItem1.value];
+        changeBtn.style.transform = `rotate(${180 * degIndex}deg)`;
+        degIndex === 1 ? degIndex = 0 : degIndex++;
         calc();
     });
 }
