@@ -10,6 +10,8 @@ function calc() {
     const curItemValue1 = curItem1.value;
     const curItemValue2 = curItem2.value;
 
+    // Sending query to API
+
     fetch(`https://api.exchangerate-api.com/v4/latest/${curItemValue1}`)
         .then((res) => res.json())
         .then((data) => {
@@ -18,6 +20,8 @@ function calc() {
             curValue2.value = (curValue1.value * rate).toFixed(2);
         });
 }
+
+// When we clicking on buttons, triggered calc function that send query to api and update data
 
 function listeners() {
     curItem1.addEventListener('change', calc);
